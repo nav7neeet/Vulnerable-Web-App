@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <%@ include file="/WEB-INF/views/commonPage.jsp"%>
 <html>
 <head>
@@ -15,7 +15,7 @@
 		else
 			out.print("<h4>User input inserted into the HTML attribute without any output encoding Lolz..</h4>");
 	%>
-
+	
 	<br>
 	<a href=http://www.google.com/${requestScope.userInput}> Google</a>
 

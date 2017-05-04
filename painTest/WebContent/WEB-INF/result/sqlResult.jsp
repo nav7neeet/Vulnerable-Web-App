@@ -1,6 +1,6 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <%@ include file="/WEB-INF/views/commonPage.jsp" %>
 <html>
 <head>
