@@ -10,8 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.acc.dao.FetchDetailsPatched;
+import com.acc.dao.FetchDetailsUnpatched;
 
-@WebServlet("/restricted/patched/sql")
+@WebServlet("/restricted/result/sql")
 public class SqlInjection extends HttpServlet
 {
 	@Override
@@ -25,7 +26,11 @@ public class SqlInjection extends HttpServlet
 		String recordFound = "true";
 		try
 		{
-			list = new FetchDetailsPatched().displayDetails(input);
+			if ("patched".equals(request.getParameter("param")))
+				list = new FetchDetailsPatched().displayDetails(input);
+			else 
+				list = new FetchDetailsUnpatched().displayDetails(input);
+			
 			if (list.isEmpty())
 			{
 				recordFound = "false";

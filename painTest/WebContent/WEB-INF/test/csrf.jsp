@@ -8,7 +8,7 @@
 <body>
 		<h3> Demystify CSRF</h3>
 
-		<form action="${pageContext.request.contextPath }/restricted/${param.path }/csrf" method="${param.method}">
+		<form action="${pageContext.request.contextPath }/restricted/result/csrf?param=${param.path}" method="${param.method}">
 				Email - <input type="text" name="email" > <input type="submit" value="update email">
 		</form>
 		

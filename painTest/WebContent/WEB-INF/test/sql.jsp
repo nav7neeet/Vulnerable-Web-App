@@ -7,7 +7,7 @@
 <body>
 		<h3>Demystify Sql Injection</h3>
 		
-		<form action="${pageContext.request.contextPath }/restricted/${param.path }/sql"  method="post">
+		<form action="${pageContext.request.contextPath }/restricted/result/sql?param=${param.path }"  method="post">
 				First name - <input type="text" name="name"> <input
 						type="submit"
 				>

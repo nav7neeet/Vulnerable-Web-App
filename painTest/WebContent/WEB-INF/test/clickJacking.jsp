@@ -25,7 +25,7 @@
 	
 	
 	<iframe
-		src="${pageContext.request.contextPath}/restricted/${param.path }/bankPortal"
+		src="${pageContext.request.contextPath}/restricted/result/bankPortal?param=${param.path }"
 		style="width: 200px; height: 150px; position: absolute; top: 200px; left: 00px; z-index: -1; opacity: 1.0">
 	</iframe>
 

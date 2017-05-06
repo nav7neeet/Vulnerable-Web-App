@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/patched/XXSSProtection")
+@WebServlet("/restricted/result/XXSSProtection")
 public class XXSSProtection extends HttpServlet
 {
 	@Override
@@ -18,9 +18,18 @@ public class XXSSProtection extends HttpServlet
 		String input = request.getParameter("name");
 		System.out.println("user input Get- " + input);
 		
-		response.setHeader("X-XSS-Protection", "1");
+		if ("patched".equals(request.getParameter("param")))
+		{
+			response.setHeader("X-XSS-Protection", "1");
+			request.setAttribute("patched", "true");
+		}
+		else
+		{
+			response.setHeader("X-XSS-Protection", "0");
+			request.setAttribute("patched", "false");
+		}
+		
 		request.setAttribute("userInput", input);
-		request.setAttribute("patched", "true");
 		
 		request.getRequestDispatcher("/WEB-INF/result/XXssProtection.jsp").forward(
 				request, response);

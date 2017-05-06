@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/patched/csp")
+@WebServlet("/restricted/result/csp")
 public class CspController extends HttpServlet
 {
 	@Override
@@ -19,7 +19,12 @@ public class CspController extends HttpServlet
 		System.out.println("user input - " + input);
 		
 		request.setAttribute("userInput", input);
-		request.setAttribute("patched", "true");
+		
+		if ("patched".equals(request.getParameter("param")))
+			request.setAttribute("patched", "true");
+		else
+			request.setAttribute("patched", "false");
+		
 		request.getRequestDispatcher("/WEB-INF/result/csp.jsp")
 				.forward(request, response);
 		

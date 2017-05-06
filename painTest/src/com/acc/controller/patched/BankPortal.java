@@ -8,14 +8,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/patched/bankPortal")
+@WebServlet("/restricted/result/bankPortal")
 public class BankPortal extends HttpServlet
 {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-		request.getRequestDispatcher("/WEB-INF/test/transferFunds2.jsp").forward(request,
+		if ("patched".equals(request.getParameter("param")))
+			request.getRequestDispatcher("/WEB-INF/test/transferFunds2.jsp").forward(request,
 				response);
+		else
+			request.getRequestDispatcher("/WEB-INF/test/transferFunds1.jsp").forward(request,
+					response);
 	}
 }

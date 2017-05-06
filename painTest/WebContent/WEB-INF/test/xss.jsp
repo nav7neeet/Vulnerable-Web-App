@@ -8,7 +8,7 @@
 	<h3>Demystify XSS</h3>
 
 	<form
-		action="${pageContext.request.contextPath}/restricted/${param.path }/xss"
+		action="${pageContext.request.contextPath}/restricted/result/xss?param=${param.path}"
 		method="post">
 		Input - <input type="text" name="name"> <input type="submit">
 

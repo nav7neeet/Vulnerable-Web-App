@@ -9,11 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/patched/csrf")
+@WebServlet("/restricted/result/csrf")
 public class Csrf extends HttpServlet
 {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException
+	{
+		if ("patched".equals(request.getParameter("param"))) patchedGet(
+				request, response);
+		else
+			unPatchedGet(request, response);
+	}
+	
+	void patchedGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
 		String input = request.getParameter("name");
@@ -30,8 +39,29 @@ public class Csrf extends HttpServlet
 		rd.forward(request, response);
 	}
 	
+	void unPatchedGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException
+	{
+		String input = request.getParameter("name");
+		System.out.println("user input Get- " + input);
+		request.setAttribute("test", "unpatched");
+		
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/WEB-INF/result/csrfResult.jsp");
+		rd.forward(request, response);
+	}
+	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException
+	{
+		if ("patched".equals(request.getParameter("param"))) patchedPost(
+				request, response);
+		else
+			unPatchedPost(request, response);
+	}
+	
+	void patchedPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
 		String input = request.getParameter("name");
@@ -41,6 +71,18 @@ public class Csrf extends HttpServlet
 		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/WEB-INF/views/csrfResult.jsp");
+		rd.forward(request, response);
+	}
+	
+	void unPatchedPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException
+	{
+		String input = request.getParameter("name");
+		System.out.println("user input Get- " + input);
+		request.setAttribute("test", "unpatched");
+		
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/WEB-INF/result/csrfResult.jsp");
 		rd.forward(request, response);
 	}
 }

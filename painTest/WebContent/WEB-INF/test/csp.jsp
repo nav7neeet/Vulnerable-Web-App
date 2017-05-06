@@ -8,7 +8,7 @@
 	<h3>Demystify CSP</h3>
 	
 	<form
-		action="${pageContext.request.contextPath }/restricted/${param.path}/csp"
+		action="${pageContext.request.contextPath }/restricted/result/csp?param=${param.path}"
 		method="post">
 		Input - <input type="text" name="name"> <input type="submit">
 		<input type="hidden" name="hiddenVar" value="body">
