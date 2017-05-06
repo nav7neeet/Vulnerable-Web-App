@@ -1,4 +1,4 @@
-package com.acc.controller.patched;
+package com.acc.result;
 
 import java.io.IOException;
 import java.util.List;

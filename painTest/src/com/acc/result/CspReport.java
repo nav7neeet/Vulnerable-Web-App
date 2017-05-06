@@ -1,4 +1,4 @@
-package com.acc.controller.patched;
+package com.acc.result;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/restricted/patched/cspReport")
-public class CspReportController extends HttpServlet
+public class CspReport extends HttpServlet
 {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
