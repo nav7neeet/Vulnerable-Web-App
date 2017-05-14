@@ -36,6 +36,9 @@
 <a href="${pageContext.request.contextPath}/restricted/test/csp?path=unpatched">Test CSP - unpatched</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/csp?path=patched">Test CSP - patched</a><br><br>
 
+<a href="${pageContext.request.contextPath}/restricted/test/cors?path=unpatched">Test Cross origin resource sharing - unpatched</a><br>
+<a href="${pageContext.request.contextPath}/restricted/test/cors?path=patched">Test Cross origin resource sharing - patched</a><br><br>
+
 
 <a href="${pageContext.request.contextPath}/restricted/testPhishingDirect">Phishing Direct</a><br>
 <a href="${pageContext.request.contextPath}/restricted/testPhishingIndirect">Phishing Indirect - In progress</a><br>
