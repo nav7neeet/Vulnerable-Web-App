@@ -33,11 +33,11 @@
 <a href="${pageContext.request.contextPath}/restricted/test/roleBasedAuthorization">Role Based Authorization</a><br><br>
 <a href="${pageContext.request.contextPath}/test">Test HSTS Header - In progress</a><br><br>
 
-<a href="${pageContext.request.contextPath}/restricted/test/csp?path=unpatched">Test CSP - unpatched</a><br>
-<a href="${pageContext.request.contextPath}/restricted/test/csp?path=patched">Test CSP - patched</a><br><br>
+<a href="${pageContext.request.contextPath}/restricted/test/csp?path=unpatched">Content Security Policy - not present</a><br>
+<a href="${pageContext.request.contextPath}/restricted/test/csp?path=patched">Content Security Policy - present</a><br><br>
 
-<a href="${pageContext.request.contextPath}/restricted/test/cors?path=unpatched">Test Cross origin resource sharing - unpatched</a><br>
-<a href="${pageContext.request.contextPath}/restricted/test/cors?path=patched">Test Cross origin resource sharing - patched</a><br><br>
+<a href="${pageContext.request.contextPath}/restricted/test/cors?path=unpatched">Cross origin resource sharing - not present</a><br>
+<a href="${pageContext.request.contextPath}/restricted/test/cors?path=patched">Cross origin resource sharing - present</a><br><br>
 
 
 <a href="${pageContext.request.contextPath}/restricted/testPhishingDirect">Phishing Direct</a><br>
