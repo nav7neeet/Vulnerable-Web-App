@@ -67,6 +67,19 @@ public class Xss extends HttpServlet
 			request.getRequestDispatcher("/WEB-INF/result/xssJS.jsp")
 					.forward(request, response);
 			break;
+			
+		case "css":
+			request.setAttribute("userInput", input);
+			request.getRequestDispatcher("/WEB-INF/result/xssCSS.jsp")
+					.forward(request, response);
+			break;
+			
+		case "dom":
+			output = ESAPI.encoder().encodeForJavaScript(input);
+			request.setAttribute("userInput", output);
+			request.getRequestDispatcher("/WEB-INF/result/xssDOM.jsp")
+					.forward(request, response);
+			break;
 
 		default:
 			break;
@@ -111,6 +124,12 @@ public class Xss extends HttpServlet
 		case "css":
 			request.setAttribute("userInput", input);
 			request.getRequestDispatcher("/WEB-INF/result/xssCSS.jsp")
+					.forward(request, response);
+			break;
+		
+		case "dom":
+			request.setAttribute("userInput", input);
+			request.getRequestDispatcher("/WEB-INF/result/xssDom.jsp")
 					.forward(request, response);
 			break;
 

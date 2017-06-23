@@ -12,12 +12,15 @@
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=unpatched&context=attribute">XSS - unpatched (context: Attribute)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=unpatched&context=hidden">XSS - unpatched (context: Hidden variable)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=unpatched&context=js">XSS - unpatched (context: Java Script)</a><br>
+<a href="${pageContext.request.contextPath}/restricted/test/xss?path=unpatched&context=dom&default=test<>">XSS - unpatched (context: dom)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=unpatched&context=css">XSS - unpatched (context: CSS) In progress</a><br><br>
 
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=body">XSS - patched (context: Body)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=attribute">XSS - patched (context: Attribute)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=hidden">XSS - patched (context: Hidden variable)</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=js">XSS - patched (context: Java Script)</a><br><br>
+<a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=dom&default=test<>">XSS - unpatched (context: dom)</a><br>
+<a href="${pageContext.request.contextPath}/restricted/test/xss?path=patched&context=css">XSS - unpatched (context: CSS) In progress</a><br><br>
 
 <a href="${pageContext.request.contextPath}/restricted/test/XXssProtection?path=unpatched">X-XSS-protection Header absent</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/XXssProtection?path=patched">X-XSS-protection Header present</a><br><br>
