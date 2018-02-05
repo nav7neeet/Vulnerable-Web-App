@@ -7,12 +7,17 @@
 
 	var pos = document.URL.indexOf("default="); //finds the position of value 
 	var userInput = document.URL.substring(pos, document.URL.length); //copy the value into userInput variable
-	var x = "${requestScope.patched }";
-	if (x === "true")
+	var x = "${param.path}";
+	if (x === "patched")
 	{
+		console.log("hi..");
 		document.write(escape(userInput)); //writes content to the webpage
 	}
-	document.write(unescape(userInput)); //writes content to the webpage
+	else
+	{
+		document.write(unescape(userInput)); //writes content to the webpage
+	}
+	
 	
 </script>
 
@@ -21,8 +26,8 @@
 		response.setHeader("X-XSS-Protection", "0");
 	%>
 	<%
-		String patched = (String) request.getAttribute("patched");
-		if ("true".equals(patched))
+		String patched = (String) request.getParameter("path");
+		if ("patched".equals(patched))
 			out.print(
 					"<h4>User input inserted into the JS DOM after output encoding Lolz..</h4> Check the page source to see the encoding..<br><br>");
 		else

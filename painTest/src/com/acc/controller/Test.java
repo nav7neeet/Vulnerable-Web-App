@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 
-@WebServlet("/upload")
+@WebServlet("/test")
 public class Test extends HttpServlet
 {
 	@Override
