@@ -10,7 +10,6 @@
 	var x = "${param.path}";
 	if (x === "patched")
 	{
-		console.log("hi..");
 		document.write(escape(userInput)); //writes content to the webpage
 	}
 	else
