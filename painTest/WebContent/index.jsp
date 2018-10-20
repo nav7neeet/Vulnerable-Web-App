@@ -30,8 +30,6 @@
 <a href="${pageContext.request.contextPath}/restricted/test/clickJacking?path=unpatched">Click Jacking - unpatched</a><br>
 <a href="${pageContext.request.contextPath}/restricted/test/clickJacking?path=patched">Click Jacking - patched </a><br><br>
 
-<a href="${pageContext.request.contextPath}/restricted/test/roleBasedAuthorization">Role Based Authorization</a><br><br>
-
 
 <a href="${pageContext.request.contextPath}/restricted/testPhishingDirect">Phishing Direct</a><br>
 <a href="${pageContext.request.contextPath}/restricted/testPhishingIndirect">Phishing Indirect - In progress</a><br>
