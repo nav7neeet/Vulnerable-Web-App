@@ -6,7 +6,7 @@
 		<p>
 			 <a	href="<%= application.getContextPath() %>">Home</a>
 		</p>
-		Hi, Welcome to the world of fantasies and fairy-tales!!<br>
+		Hi All, Welcome to penetration test application!!<br>
 		
 	</h3>
 </body>

@@ -11,26 +11,21 @@
 	
 	<br>
 	<%
-		String path = "";
-		String patched = (String) request.getAttribute("patched");
-		if ("true".equals(patched))
+		String path = (String) request.getAttribute("path");
+		if ("patched".equals(path))
 		{	
 			path = "patched";
 			out.print("Check console to see that the Bank portal was not loaded in the frame.cool!");
 		}
-		else if ("false".equals(patched))
-			path = "unpatched";
 	%>
 	
-	
-	
 	<iframe
-		src="${pageContext.request.contextPath}/restricted/result/bankPortal?param=${param.path }"
+		src="${pageContext.request.contextPath}/result/bankPortal?path=${param.path }"
 		style="width: 200px; height: 150px; position: absolute; top: 200px; left: 00px; z-index: -1; opacity: 1.0">
 	</iframe>
 
 	<form
-		action="${pageContext.request.contextPath}/restricted/evilWebsite">
+		action="${pageContext.request.contextPath}/result/evilWebsite">
 		<input type="submit"
 			style="position: relative; top: 110px; opacity: 0.0">
 	</form>

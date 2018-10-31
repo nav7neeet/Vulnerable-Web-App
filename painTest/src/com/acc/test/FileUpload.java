@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/test/fileUpload")
+@WebServlet("/test/fileUpload")
 public class FileUpload extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;

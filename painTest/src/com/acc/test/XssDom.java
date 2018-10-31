@@ -1,4 +1,4 @@
-package com.acc.result;
+package com.acc.test;
 
 import java.io.IOException;
 
@@ -8,13 +8,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/patched/cspReport")
-public class CspReport extends HttpServlet
+@WebServlet("/test/xssDom")
+public class XssDom extends HttpServlet
 {
+	private static final long serialVersionUID = 1L;
+	
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-		System.out.println("CSP Report");
+		request.getRequestDispatcher("/WEB-INF/test/xssDom.jsp").forward(request, response);
 	}
 }

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.owasp.esapi.ESAPI;
 
-@WebServlet("/restricted/result/xss")
+@WebServlet("/result/xss")
 public class Xss extends HttpServlet
 {
 

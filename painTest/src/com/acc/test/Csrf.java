@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/restricted/test/csrf")
+@WebServlet("/test/csrf")
 public class Csrf extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;

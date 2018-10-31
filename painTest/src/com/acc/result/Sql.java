@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.acc.dao.FetchDetailsPatched;
 import com.acc.dao.FetchDetailsUnpatched;
 
-@WebServlet("/restricted/result/sql")
-public class SqlInjection extends HttpServlet
+@WebServlet("/result/sql")
+public class Sql extends HttpServlet
 {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
