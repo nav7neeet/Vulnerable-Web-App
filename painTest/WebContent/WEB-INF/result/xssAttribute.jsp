@@ -17,7 +17,9 @@
 	%>
 	
 	<br>
-	<a href=http://www.google.com/${requestScope.userInput}> Google</a>
+	<a href=http://www.google.com/${requestScope.userInput}> Google</a><br><br>
+	
+	<input type="textbox" maxlength="255" value="${requestScope.userInput}">
 
 </body>
 </html>
