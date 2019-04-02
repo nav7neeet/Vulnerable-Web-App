@@ -1,5 +1,4 @@
-
-<%@ include file="/WEB-INF/views/commonPage.jsp"%>
+<%@ include file="/commonPage.jsp"%>
 <html>
 <head>
 <title>Test XSS</title>

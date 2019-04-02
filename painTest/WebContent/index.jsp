@@ -1,5 +1,4 @@
-
-<%@ include file="/WEB-INF/views/commonPage.jsp" %>
+<%@ include file="/commonPage.jsp" %>
 <html>
 <head>
 	<title>Home</title>
@@ -25,9 +24,6 @@
 <a href="${pageContext.request.contextPath}/test/csrf?path=unpatched&method=get">CSRF GET - unpatched</a><br>
 <a href="${pageContext.request.contextPath}/test/csrf?path=unpatched&method=post">CSRF POST - unpatched</a><br>
 <a href="${pageContext.request.contextPath}/test/csrf?path=patched&method=get">CSRF(GET & POST) - patched</a><br><br>
-
-<a href="${pageContext.request.contextPath}/test/clickJacking?path=unpatched">Click Jacking - unpatched</a><br>
-<a href="${pageContext.request.contextPath}/test/clickJacking?path=patched">Click Jacking - patched </a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/fileUpload?path=patched">File upload - patched </a><br><br>
 

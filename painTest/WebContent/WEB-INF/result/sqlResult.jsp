@@ -1,7 +1,6 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
-
-<%@ include file="/WEB-INF/views/commonPage.jsp" %>
+<%@ include file="/commonPage.jsp" %>
 <html>
 <head>
 <title>Home</title>
