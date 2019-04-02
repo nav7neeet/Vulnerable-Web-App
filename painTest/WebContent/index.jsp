@@ -12,7 +12,7 @@
 <a href="${pageContext.request.contextPath}/test/xss?path=unpatched&context=attribute">XSS - unpatched (context: Attribute)</a><br>
 <a href="${pageContext.request.contextPath}/test/xss?path=unpatched&context=hidden">XSS - unpatched (context: Hidden variable)</a><br>
 <a href="${pageContext.request.contextPath}/test/xss?path=unpatched&context=js">XSS - unpatched (context: Java Script)</a><br>
-<a href="${pageContext.request.contextPath}/test/xssDom?path=unpatched&context=dom&default=<script>alert(1)</script>">XSS - unpatched (context: dom)</a><br>
+<a href="${pageContext.request.contextPath}/test/xssDom?path=unpatched&context=dom&userinput=<script>alert('xss')</script>">XSS - unpatched (context: dom)</a><br>
 <a href="${pageContext.request.contextPath}/test/xss?path=unpatched&context=css">XSS - unpatched (context: CSS) In progress</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/xss?path=patched&context=body">XSS - patched (context: Body)</a><br>

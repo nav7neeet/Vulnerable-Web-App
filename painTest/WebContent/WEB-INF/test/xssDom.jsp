@@ -4,17 +4,17 @@
 <title>XSS</title>
 </head>
 <script type="text/javascript">
-
-	var pos = document.URL.indexOf("default="); //finds the position of value 
-	var userInput = document.URL.substring(pos, document.URL.length); //copy the value into userInput variable
+	//finds the position of userinput
+	var pos = document.URL.indexOf("userinput=");
+	var userInput = document.URL.substring(pos, document.URL.length); 
 	var x = "${param.path}";
 	if (x === "patched")
-	{
-		document.write(escape(userInput)); //writes content to the webpage
+	{	
+		document.write(escape(userInput));
 	}
 	else
 	{
-		document.write(unescape(userInput)); //writes content to the webpage
+		document.write(unescape(userInput));
 	}
 	
 	
@@ -28,9 +28,9 @@
 		String patched = (String) request.getParameter("path");
 		if ("patched".equals(patched))
 			out.print(
-					"<h4>User input inserted into the JS DOM after output encoding Lolz..</h4> Check the page source to see the encoding..<br><br>");
+					"<h4>User input inserted into JS DOM after output encoding</h4> Check the page source to see the encoding..<br><br>");
 		else
-			out.print("<h4>User input inserted into the JS DOM without any output encoding Lolz..</h4>");
+			out.print("<h4>User input inserted into JS DOM without any output encoding</h4>");
 	%>
 </body>
 </html>

@@ -11,9 +11,9 @@
 			String patched=(String)request.getAttribute("patched");
 			
 			if("true".equals(patched))
-				out.print("<h4>User input inserted into the body after output encoding Lolz..</h4> Check the page source to see the encoding..<br><br>");
+				out.print("<h4>User input inserted into body after output encoding</h4> Check the page source to see the encoding..<br><br>");
 			else
-				out.print("<h4>User input inserted into the body without any output encoding Lolz..</h4>");
+				out.print("<h4>User input inserted into body without any output encoding</h4>");
 		%>
 		
 		<br>

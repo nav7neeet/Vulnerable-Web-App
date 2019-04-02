@@ -67,12 +67,10 @@ public class FileUpload extends HttpServlet
 	@Override
 	public void init()
 	{
-		System.out.println("servlet initialisation");
 	}
 	
 	@Override
 	public void destroy()
 	{
-		System.out.println("destroying servlet");
 	}
 }
