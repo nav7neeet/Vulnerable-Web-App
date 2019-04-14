@@ -1,4 +1,4 @@
-package com.acc.result;
+package com.nav.result;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.acc.dao.Database;
+import com.nav.dao.Database;
 
 @WebServlet("/result/sqlInjection")
 public class SQLInjection extends HttpServlet {

@@ -1,4 +1,4 @@
-package com.acc.result;
+package com.nav.result;
 
 import java.io.File;
 import java.io.FileNotFoundException;
