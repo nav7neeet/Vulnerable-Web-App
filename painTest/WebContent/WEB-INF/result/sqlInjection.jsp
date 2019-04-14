@@ -1,9 +1,10 @@
+<%@ include file="/commonPage.jsp"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 
 <html>
 <head>
-<title>Home</title>
+<title>Test Result - SQL Injection</title>
 </head>
 <body>
 		<h3>User details..</h3>

@@ -1,7 +1,7 @@
 <%@ include file="/commonPage.jsp"%>
 <html>
 <head>
-<title>XSS</title>
+<title>Test XSS DOM</title>
 </head>
 <script type="text/javascript">
 	//finds the position of userinput
@@ -20,6 +20,7 @@
 </script>
 
 <body>
+	<h3>Demystify XSS DOM</h3>
 	<%
 		response.setHeader("X-XSS-Protection", "0");
 	%>

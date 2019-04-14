@@ -1,7 +1,7 @@
 <%@ include file="/commonPage.jsp" %>
 <html>
 <head>
-	<title>CSRF Result</title>
+	<title>Test Result - CSRF</title>
 </head>
 <body>
 

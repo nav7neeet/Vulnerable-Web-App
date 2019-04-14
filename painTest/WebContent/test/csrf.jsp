@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<%@ include file="/commonPage.jsp"%>
 <html>
 <head>
-<meta charset="UTF-7">
-<title>CSRF</title>
+<title>Test CSRF</title>
 </head>
 
 <body>
+	<h3>Demystify CSRF</h3>
+
 <h4 onclick="submitRequest()">Thanks for visiting this Fraud Website, I've triggered a GET/POST request to update the recevery email address. You can check it in developer tool.</h4>
 	 <form action="http://127.0.0.1:8082/painTest/result/csrf?" method="${param.method}" id="updateEmail">
 		<input type="text" name="email" value="test@best.com">

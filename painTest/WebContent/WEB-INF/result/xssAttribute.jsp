@@ -1,7 +1,7 @@
 <%@ include file="/commonPage.jsp"%>
 <html>
 <head>
-	<title>XSS</title>
+<title>Test Result - XSS</title>
 </head>
 <body>
 	<%
