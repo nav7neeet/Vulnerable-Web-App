@@ -7,7 +7,7 @@
 	//finds the position of userinput
 	var pos = document.URL.indexOf("userinput=");
 	var userInput = document.URL.substring(pos, document.URL.length); 
-	var path = "${param.path}";
+	var path = "${param.param}";
 	document.write("<h3>Demystify XSS DOM</h3>");
 	if (path === "patched")
 	{	

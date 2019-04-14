@@ -16,7 +16,7 @@
 <h4>Thanks for visiting this Fraud Website, Click anywhere on the page to trigger a GET/POST request to update your recovery email address.</h4>
 	 <form action="${pageContext.request.contextPath}/result/csrf?" method="${param.method}" id="updateEmail">
 		<input type="hidden" name="email" value="evil@devil.com">
-		<input type="hidden" name="param" value="${param.path}">
+		<input type="hidden" name="param" value="${param.param}">
 	</form>
 </body>
 </html>
