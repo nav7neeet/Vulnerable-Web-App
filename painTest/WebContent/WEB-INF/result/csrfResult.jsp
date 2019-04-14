@@ -3,8 +3,8 @@
 <head>
 	<title>Test Result - CSRF</title>
 </head>
-<body>
 
+<body>
 <% 
 	String errorMessage= (String)request.getAttribute("errorMessage"); 
 
@@ -22,6 +22,5 @@
 		out.println("Csrf detected!, Account recovery email NOT updated in the DB");
 	}
 %>
-
 </body>
 </html>

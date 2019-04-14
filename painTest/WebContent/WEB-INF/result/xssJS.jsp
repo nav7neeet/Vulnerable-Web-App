@@ -2,12 +2,13 @@
 <html>
 <head>
 <title>Test Result - XSS</title>
-</head>
 <script type="text/javascript">
 	var a=10;
 	var b=20;
 	var c="${requestScope.userInput }";
 </script>
+</head>
+
 <body>
 	<% response.setHeader("X-XSS-Protection", "0"); %>
 	<% 

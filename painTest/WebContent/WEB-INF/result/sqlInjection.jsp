@@ -6,6 +6,7 @@
 <head>
 <title>Test Result - SQL Injection</title>
 </head>
+
 <body>
 		<h3>User details..</h3>
 
