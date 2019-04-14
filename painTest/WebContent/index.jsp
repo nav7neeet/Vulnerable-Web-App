@@ -4,8 +4,11 @@
 	<title>Home</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/test/sql.jsp?path=unpatched" class="test">SQL Injection - unpatched</a><br>
-<a href="${pageContext.request.contextPath}/test/sql.jsp?path=patched">SQL Injection - patched</a><br><br>
+<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?path=unpatched&context=error">SQL Injection - unpatched (context: error)</a><br>
+<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?path=unpatched&context=blind">SQL Injection - unpatched (context: blind)</a><br><br>
+
+<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?path=patched&context=error">SQL Injection - patched (context: error)</a><br>
+<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?path=patched&context=blind">SQL Injection - patched (context: blind)</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/xss.jsp?path=unpatched&context=body">XSS - unpatched (context: Body)</a><br>
 <a href="${pageContext.request.contextPath}/test/xss.jsp?path=unpatched&context=attribute">XSS - unpatched (context: Attribute)</a><br>
