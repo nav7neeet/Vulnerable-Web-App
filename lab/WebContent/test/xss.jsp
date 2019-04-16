@@ -8,7 +8,7 @@
 
 	<form
 		action="${pageContext.request.contextPath}/result/xss?param=${param.param}" method="post">
-		Input - <input type="text" name="name"> <input type="submit">
+		Input - <input size="30" type="text" name="name"> <input type="submit">
 		<input type="hidden" name="context" value="${param.context}">
 	</form>
 </body>
