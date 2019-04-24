@@ -28,6 +28,8 @@
 <a href="${pageContext.request.contextPath}/test/csrf.jsp?param=unpatched&method=post">CSRF POST - unpatched</a><br>
 <a href="${pageContext.request.contextPath}/test/csrf.jsp?param=patched&method=get">CSRF(GET & POST) - patched</a><br><br>
 
+<a href="${pageContext.request.contextPath}/test/xxe.jsp?param=unpatched">XXE - unpatched</a><br><br>
+
 <a href="${pageContext.request.contextPath}/test/fileUpload.jsp?param=patched">File upload - patched </a><br><br>
 
 </body>
