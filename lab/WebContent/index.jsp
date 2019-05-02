@@ -4,6 +4,10 @@
 	<title>Home</title>
 </head>
 <body>
+
+<a href="${pageContext.request.contextPath}/test/angularInjection.jsp?param=unpatched">AngularJS template Injection - unpatched</a><br>
+<a href="${pageContext.request.contextPath}/test/angularInjection.jsp?param=patched">AngularJS template Injection - patched</a><br><br>
+
 <a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?param=unpatched&context=error">SQL Injection - unpatched (context: error)</a><br>
 <a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?param=unpatched&context=blind">SQL Injection - unpatched (context: blind)</a><br><br>
 
