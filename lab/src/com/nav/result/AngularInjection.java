@@ -24,9 +24,10 @@ public class AngularInjection extends HttpServlet {
 			throws ServletException, IOException
 	{
 			String input = request.getParameter("name");
-			if ("patched".equals(request.getParameter("param")))
-				request.setAttribute("patched", "true");
-			System.out.println(request.getParameter("param"));
+			String vulnerable=request.getParameter("vulnerable");
+			if ("true".equals(vulnerable))
+				request.setAttribute("vulnerable", "true");
+			
 			request.setAttribute("userInput", input);
 			request.getRequestDispatcher("/result/angularInjection.jsp").forward(request, response);
 	}

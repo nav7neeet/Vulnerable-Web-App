@@ -4,11 +4,13 @@
 <title>Test AngularJS Template Injection</title>
 </head>
 <body>
-	<h3>Demystify AngularJS Template Injection</h3>
+	<h4>Chapter: AngularJS Template Injection</h4>
 
 	<form
-		action="${pageContext.request.contextPath}/result/angularInjection?param=${param.param}" method="post">
-		Input - <input type="text" name="name"> <input type="submit">
+		action="${pageContext.request.contextPath}/result/angularInjection.jsp?vulnerable=${param.vulnerable}" method="post">
+		Input: <input type="text" name="input"> <input type="submit">
 	</form>
-</body>
+	
+<%@ include file="/instructions/angularinjection.jsp"%>
+</body>	
 </html>

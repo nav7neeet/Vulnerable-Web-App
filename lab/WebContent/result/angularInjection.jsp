@@ -9,21 +9,20 @@
 
 <body>
 		<% 
-			String patched=(String)request.getAttribute("patched");
-			String userInput=(String)request.getAttribute("userInput");
+			String vulnerable=(String)request.getParameter("vulnerable");
+			String input=(String)request.getParameter("input");
 			
-			if("true".equals(patched))
+			if("false".equals(vulnerable))
 			{	
 				out.print("<h4>User input inserted into AngularJS template with ng-non-bindable directive</h4> Check the page source<br><br>");
-				out.print("<div  ng-non-bindable>"+userInput+"</div>");
+				out.print("<div  ng-non-bindable>"+input+"</div>");
 			}	
 			else
 			{
 				out.print("<h4>User input inserted into AngularJS template without ng-non-bindable directive</h4> Check the page source<br><br>");
-				out.print("<div>"+userInput+"</div>");
+				out.print("<div>"+input+"</div>");
 			}	
 		%>
-		<br>
-
+	
 </body>
 </html>

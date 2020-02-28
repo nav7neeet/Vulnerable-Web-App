@@ -1,3 +1,1 @@
-<a	href="<%= application.getContextPath() %>">Home</a><br><br>
-
-Welcome to penetration test application!!<br><br>
+<b><a href="<%= application.getContextPath() %>">Home</a></b><br><br>
