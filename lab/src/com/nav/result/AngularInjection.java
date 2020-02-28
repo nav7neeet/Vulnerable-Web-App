@@ -28,6 +28,6 @@ public class AngularInjection extends HttpServlet {
 				request.setAttribute("patched", "true");
 			System.out.println(request.getParameter("param"));
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/angularInjection.jsp").forward(request, response);
+			request.getRequestDispatcher("/result/angularInjection.jsp").forward(request, response);
 	}
 }

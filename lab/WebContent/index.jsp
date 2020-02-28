@@ -36,5 +36,7 @@
 
 <a href="${pageContext.request.contextPath}/test/fileUpload.jsp?param=patched">File upload - patched </a><br><br>
 
+<a href="${pageContext.request.contextPath}/test/xhr.jsp?param=unpatched">XML HTTP Request </a><br><br>
+
 </body>
 </html>

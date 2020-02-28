@@ -61,7 +61,7 @@ public class SQLInjection extends HttpServlet {
 		
 		request.setAttribute("details", list);
 		request.setAttribute("context", context);
-		request.getRequestDispatcher("/WEB-INF/result/sqlInjection.jsp").forward(
+		request.getRequestDispatcher("/result/sqlInjection.jsp").forward(
 				request, response);
 	}
 }

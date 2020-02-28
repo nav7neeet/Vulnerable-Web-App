@@ -21,6 +21,6 @@ public class Database
             {
                 System.out.println("Connection to SQLite has been established.");
             }
-        return conn;
+         return conn;
 	}
 }

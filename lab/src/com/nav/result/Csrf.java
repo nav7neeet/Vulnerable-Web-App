@@ -35,7 +35,7 @@ public class Csrf extends HttpServlet
 		}
 		
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/WEB-INF/result/csrfResult.jsp");
+				.getRequestDispatcher("/result/csrfResult.jsp");
 		rd.forward(request, response);
 	}
 	
@@ -47,7 +47,7 @@ public class Csrf extends HttpServlet
 		request.setAttribute("test", "unpatched");
 		
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/WEB-INF/result/csrfResult.jsp");
+				.getRequestDispatcher("/result/csrfResult.jsp");
 		rd.forward(request, response);
 	}
 	
@@ -70,7 +70,7 @@ public class Csrf extends HttpServlet
 		System.out.println("session creation time - " + antiCSRFToken);
 		
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/WEB-INF/views/csrfResult.jsp");
+				.getRequestDispatcher("/views/csrfResult.jsp");
 		rd.forward(request, response);
 	}
 	
@@ -82,7 +82,7 @@ public class Csrf extends HttpServlet
 		request.setAttribute("test", "unpatched");
 		
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/WEB-INF/result/csrfResult.jsp");
+				.getRequestDispatcher("/result/csrfResult.jsp");
 		rd.forward(request, response);
 	}
 }

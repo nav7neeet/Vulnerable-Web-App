@@ -42,7 +42,7 @@ public class XXE extends HttpServlet {
 				empDetails=empDetails+element.getTextContent()+"<br>";
 			}
 			request.setAttribute("empDetails", empDetails);
-			request.getRequestDispatcher("/WEB-INF/result/xxe.jsp").forward(request, response);
+			request.getRequestDispatcher("/result/xxe.jsp").forward(request, response);
 		} 
 		catch (Exception e) 
 		{

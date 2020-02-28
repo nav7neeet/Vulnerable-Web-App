@@ -41,7 +41,7 @@ public class Xss extends HttpServlet
 		case "body":
 			output = ESAPI.encoder().encodeForHTML(input);
 			request.setAttribute("userInput", output);
-			request.getRequestDispatcher("/WEB-INF/result/xssBody.jsp")
+			request.getRequestDispatcher("/result/xssBody.jsp")
 					.forward(request, response);
 			break;
 
@@ -49,7 +49,7 @@ public class Xss extends HttpServlet
 			output = ESAPI.encoder().encodeForHTMLAttribute(input);
 			request.setAttribute("userInput", output);
 			request.getRequestDispatcher(
-					"/WEB-INF/result/xssAttribute.jsp").forward(
+					"/result/xssAttribute.jsp").forward(
 					request, response);
 			break;
 
@@ -57,27 +57,27 @@ public class Xss extends HttpServlet
 			output = ESAPI.encoder().encodeForHTMLAttribute(input);
 			request.setAttribute("userInput", output);
 			request.getRequestDispatcher(
-					"/WEB-INF/result/xssHiddenVar.jsp").forward(
+					"/result/xssHiddenVar.jsp").forward(
 					request, response);
 			break;
 
 		case "js":
 			output = ESAPI.encoder().encodeForJavaScript(input);
 			request.setAttribute("userInput", output);
-			request.getRequestDispatcher("/WEB-INF/result/xssJS.jsp")
+			request.getRequestDispatcher("/result/xssJS.jsp")
 					.forward(request, response);
 			break;
 			
 		case "css":
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/xssCSS.jsp")
+			request.getRequestDispatcher("/result/xssCSS.jsp")
 					.forward(request, response);
 			break;
 			
 		case "dom":
 			output = ESAPI.encoder().encodeForJavaScript(input);
 			request.setAttribute("userInput", output);
-			request.getRequestDispatcher("/WEB-INF/result/xssDOM.jsp")
+			request.getRequestDispatcher("/result/xssDOM.jsp")
 					.forward(request, response);
 			break;
 
@@ -97,39 +97,39 @@ public class Xss extends HttpServlet
 		{
 		case "body":
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/xssBody.jsp")
+			request.getRequestDispatcher("/result/xssBody.jsp")
 					.forward(request, response);
 			break;
 
 		case "attribute":
 			request.setAttribute("userInput", input);
 			request.getRequestDispatcher(
-					"/WEB-INF/result/xssAttribute.jsp").forward(
+					"/result/xssAttribute.jsp").forward(
 					request, response);
 			break;
 
 		case "hidden":
 			request.setAttribute("userInput", input);
 			request.getRequestDispatcher(
-					"/WEB-INF/result/xssHiddenVar.jsp").forward(
+					"/result/xssHiddenVar.jsp").forward(
 					request, response);
 			break;
 
 		case "js":
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/xssJS.jsp")
+			request.getRequestDispatcher("/result/xssJS.jsp")
 					.forward(request, response);
 			break;
 
 		case "css":
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/xssCSS.jsp")
+			request.getRequestDispatcher("/result/xssCSS.jsp")
 					.forward(request, response);
 			break;
 		
 		case "dom":
 			request.setAttribute("userInput", input);
-			request.getRequestDispatcher("/WEB-INF/result/xssDom.jsp")
+			request.getRequestDispatcher("/result/xssDom.jsp")
 					.forward(request, response);
 			break;
 
