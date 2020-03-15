@@ -34,7 +34,7 @@
 <a href="${pageContext.request.contextPath}/test/CSRF.jsp?vulnerable=false&method=GET">CSRF GET - not vulnerable</a><br>
 <a href="${pageContext.request.contextPath}/test/CSRF.jsp?vulnerable=false&method=POST">CSRF POST - not vulnerable</a><br><br>
 
-<a href="${pageContext.request.contextPath}/test/xxe.jsp?vulnerable=true">XXE - vulnerable</a><br><br>
+<a href="${pageContext.request.contextPath}/test/XXE.jsp?vulnerable=true">XXE - vulnerable</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/fileUpload.jsp?vulnerable=false">File upload - not vulnerable </a><br><br>
 
