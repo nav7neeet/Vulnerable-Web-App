@@ -40,5 +40,8 @@
 
 <a href="${pageContext.request.contextPath}/test/xhr.jsp?vulnerable=true">XML HTTP Request </a><br><br>
 
+<a href="${pageContext.request.contextPath}/test/CommandInjection.jsp?vulnerable=true">Command Injection - vulnerable </a><br><br>
+
+
 </body>
 </html>

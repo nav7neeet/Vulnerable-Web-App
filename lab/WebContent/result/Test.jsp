@@ -11,11 +11,11 @@
 			
 			if("true".equals(vulnerable))
 			{	
-				out.print("<h4>User input inserted into ");
+				out.print("<h4>User input inserted into . </h4>");
 			}	
 			else
 			{
-				out.print("<h4>User input inserted into ");
+				out.print("<h4>User input inserted into . </h4>");
 			}	
 	%>
 
