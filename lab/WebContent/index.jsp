@@ -9,11 +9,11 @@
 <a href="${pageContext.request.contextPath}/test/angularInjection.jsp?vulnerable=true">AngularJS template Injection - vulnerable</a><br>
 <a href="${pageContext.request.contextPath}/test/angularInjection.jsp?vulnerable=false">AngularJS template Injection - not vulnerable</a><br><br>
 
-<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?vulnerable=true&context=error">SQL Injection - vulnerable (context: error)</a><br>
-<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?vulnerable=true&context=blind">SQL Injection - vulnerable (context: blind)</a><br><br>
+<a href="${pageContext.request.contextPath}/test/SQLInjection_Error.jsp?vulnerable=true&context=error">SQL Injection - vulnerable (context: error)</a><br>
+<a href="${pageContext.request.contextPath}/test/SQLInjection_Blind.jsp?vulnerable=true&context=blind">SQL Injection - vulnerable (context: blind)</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?vulnerable=false&context=error">SQL Injection - not vulnerable (context: error)</a><br>
-<a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?vulnerable=false&context=blind">SQL Injection - not vulnerable (context: blind)</a><br><br>
+<a href="${pageContext.request.contextPath}/test/sqlInjection2.jsp?vulnerable=false&context=blind">SQL Injection - not vulnerable (context: blind)</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=HTML">XSS - vulnerable (context: HTML)</a><br>
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=HTML_Attribute">XSS - vulnerable (context: Attribute)</a><br>
