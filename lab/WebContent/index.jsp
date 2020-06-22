@@ -11,6 +11,7 @@
 
 <a href="${pageContext.request.contextPath}/test/SQLInjection_Error.jsp?vulnerable=true&context=error">SQL Injection - vulnerable (context: error)</a><br>
 <a href="${pageContext.request.contextPath}/test/SQLInjection_Blind.jsp?vulnerable=true&context=blind">SQL Injection - vulnerable (context: blind)</a><br><br>
+<a href="${pageContext.request.contextPath}/test/SQLInjection_Blind2.jsp?vulnerable=true&context=blind">SQL Injection - vulnerable (context: blind2)</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/sqlInjection.jsp?vulnerable=false&context=error">SQL Injection - not vulnerable (context: error)</a><br>
 <a href="${pageContext.request.contextPath}/test/sqlInjection2.jsp?vulnerable=false&context=blind">SQL Injection - not vulnerable (context: blind)</a><br><br>

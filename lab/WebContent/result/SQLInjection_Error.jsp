@@ -51,7 +51,7 @@
 			int c=0;
 			while (iterator.hasNext())
 			{
-				out.print(iterator.next()+" ");
+				out.print(iterator.next()+" | ");
 				c++;
 				if(c==2)
 				{
