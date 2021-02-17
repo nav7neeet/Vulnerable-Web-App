@@ -20,7 +20,9 @@
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=HTML_Attribute">XSS - vulnerable (context: Attribute)</a><br>
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=Hidden_Variable">XSS - vulnerable (context: Hidden variable)</a><br>
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=JS">XSS - vulnerable (context: Java Script)</a><br>
-<a href="${pageContext.request.contextPath}/test/XSSDom.jsp?vulnerable=true&context=DOM&input=<script>alert('xss')</script>">XSS - vulnerable (context: DOM)</a><br>
+<a href="${pageContext.request.contextPath}/test/XSSDom.jsp?vulnerable=true&context=DOM&input=<script>alert()</script>">XSS - vulnerable (context: DOM)</a><br>
+<a href="${pageContext.request.contextPath}/test/Brutelogic-XSS-DOM.jsp">XSS - Brutelogic (context: DOM)</a><br>
+
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=true&context=CSS">XSS - vulnerable (context: CSS) In progress</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/XSS.jsp?vulnerable=false&context=HTML">XSS - not vulnerable (context: HTML)</a><br>
