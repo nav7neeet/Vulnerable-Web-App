@@ -25,11 +25,15 @@
 			Element element=(Element) node;
 			empDetails=empDetails+element.getTextContent()+"<br>";
 		}
-		out.print(empDetails);
+		
+		if("blind".equals(session.getAttribute("context")))
+			out.print("Hey XXE");
+		else
+			out.print(empDetails);
 	} 
 	catch (Exception e) 
 	{
-		
-		out.print(e.getMessage());
-	}
+		if(!"blind".equals(session.getAttribute("context")))	
+			out.print(e.getMessage());
+	}		
 %>

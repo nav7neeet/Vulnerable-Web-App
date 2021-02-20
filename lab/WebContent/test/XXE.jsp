@@ -1,3 +1,4 @@
+<%@page import="java.net.http.HttpRequest"%>
 <%@ include file="/commonPage.jsp"%>
 <html>
 <head>
@@ -75,6 +76,10 @@
 	<div id="result"></div>
 	
 	<%@ include file = "/instructions/XXE.jsp" %>
+	<%
+		String context=request.getParameter("context");
+		session.setAttribute("context", context);
+	%>
 	
 </body>
 </html>
