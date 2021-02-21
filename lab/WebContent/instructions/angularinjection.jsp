@@ -1,4 +1,7 @@
 <br><br>
-<h4>How to test?</h4>
-1. Use an angular js expression in the inut field. e.g. {{3+2}} <br>
-2. Observe that the mathematical exression evaluates to 5. This confirms angular js template injection.
+<b>How to test?</b>
+<ol>
+	<li>Use an AngularJs expression in the input field. e.g. {{3+2}} </li>
+	<li>Observe that the mathematical expression evaluates to 5 which confirms AngularJS template injection.</li>
+	<li>Use the following payload for XSS: 	{{constructor.constructor('alert(1)')()}} </li>
+</ol>
