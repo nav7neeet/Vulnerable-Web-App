@@ -36,6 +36,7 @@
 <a href="${pageContext.request.contextPath}/test/CSRF.jsp?vulnerable=true&method=POST">CSRF POST - vulnerable</a><br>
 <a href="${pageContext.request.contextPath}/test/CSRF.jsp?vulnerable=false&method=GET">CSRF GET - not vulnerable</a><br>
 <a href="${pageContext.request.contextPath}/test/CSRF.jsp?vulnerable=false&method=POST">CSRF POST - not vulnerable</a><br><br>
+<a href="${pageContext.request.contextPath}/test/One-Way-CSRF.jsp?vulnerable=false&method=POST">One Way CSRF - vulnerable</a><br><br>
 
 <a href="${pageContext.request.contextPath}/test/XXE.jsp?vulnerable=true">Normal XXE - vulnerable</a><br>
 <a href="${pageContext.request.contextPath}/test/XXE.jsp?vulnerable=true&context=blind">Blind XXE - vulnerable</a><br><br>
