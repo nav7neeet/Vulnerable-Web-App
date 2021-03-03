@@ -1,1 +1,1 @@
-<b><a href="<%= application.getContextPath() %>">Home</a></b><br><br>
+<b><a href="<%= application.getContextPath() %>">Home</a></b><br>

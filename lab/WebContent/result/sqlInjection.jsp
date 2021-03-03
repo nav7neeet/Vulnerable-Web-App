@@ -2,6 +2,7 @@
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 
+<!DOCTYPE html>
 <html>
 <head>
 <title>Test Result - SQL Injection</title>

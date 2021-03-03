@@ -1,16 +1,15 @@
-<%@ include file="/commonPage.jsp"%>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Test SQL Injection</title>
-</head>
+<head><title>Lab</title></head>
 <body>
-	<h3>Demystify SQL Injection</h3>
+  <%@ include file="/commonPage.jsp"%>
+  <h4>Lab: SQL Injection</h4>
 
-	<form
-		action="${pageContext.request.contextPath}/result/SQLInjection_Error.jsp?vulnerable=${param.vulnerable}" method="post">
-		Input - <input type="text" name="input" size="60"><br><br>
-		<input type="submit">
-		<input type="hidden" name="context" value="${param.context}">
-	</form>
+  <form
+  	action="${pageContext.request.contextPath}/result/SQLInjection_Error.jsp?vulnerable=${param.vulnerable}" method="post">
+  	Input - <input type="text" name="input" size="60"><br><br>
+  	<input type="submit">
+  	<input type="hidden" name="context" value="${param.context}">
+  </form>
 </body>
 </html>

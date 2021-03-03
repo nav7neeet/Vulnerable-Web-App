@@ -1,23 +1,20 @@
-<%@ include file="/commonPage.jsp"%>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Test Result - VulnerabilityName</title>
-</head>
-
+<head><title>Result</title></head>
 <body>
-	<% 
-			String vulnerable=(String)request.getParameter("vulnerable");
-			String input=(String)request.getParameter("input");
-			
-			if("true".equals(vulnerable))
-			{	
-				out.print("<h4>User input inserted into . </h4>");
-			}	
-			else
-			{
-				out.print("<h4>User input inserted into . </h4>");
-			}	
-	%>
-
+  <%@ include file="/commonPage.jsp"%>
+  <% 
+    String vulnerable=(String)request.getParameter("vulnerable");
+    String input=(String)request.getParameter("input");
+    
+    if("true".equals(vulnerable))
+    {	
+    	out.print("<h4>User input inserted into . </h4>");
+    }	
+    else
+    {
+    	out.print("<h4>User input inserted into . </h4>");
+    }	
+  %>
 </body>
 </html>

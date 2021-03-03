@@ -1,10 +1,9 @@
-<%@ include file="/commonPage.jsp"%>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Test Command Injection</title>
-</head>
+<head><title>Lab</title></head>
 <body>
-	<h4>Chapter: Command Injection</h4>
+  <%@ include file="/commonPage.jsp"%>
+  <h4>Lab: Command Injection</h4>
 
 	<form
 		action="${pageContext.request.contextPath}/result/CommandInjection.jsp?vulnerable=${param.vulnerable}" method="post">
